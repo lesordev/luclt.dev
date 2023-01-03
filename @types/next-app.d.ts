@@ -1,5 +1,6 @@
 import type { ElementType, PropsWithChildren } from 'react';
 import type { NextPage } from 'next';
+/// <reference types="next" />
 import type { AppProps } from 'next/app';
 
 declare module 'next/app' {

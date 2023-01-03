@@ -1,1 +1,1 @@
-export { default } from './sun-filled.svg';
+export { default as SunIcon } from './sun-filled.svg';
