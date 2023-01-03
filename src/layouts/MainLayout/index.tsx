@@ -13,11 +13,13 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
   };
 
   return (
-    <div>
-      <header>
-        <button onClick={handleSwitchTheme}>Toggle</button>
+    <>
+      <header className="fixed h-16 w-full border border-green-300">
+        <div className="mx-auto flex h-full max-w-7xl items-center px-2">
+          <button onClick={handleSwitchTheme}>Toggle</button>
+        </div>
       </header>
-      {children}
-    </div>
+      <main>{children}</main>
+    </>
   );
 };

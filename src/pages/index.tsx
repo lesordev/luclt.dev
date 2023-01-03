@@ -1,6 +1,7 @@
-
 export default function HomePage() {
   return (
-    <div className="text-red-600">HomePage</div>
-  )
+    <section className="flex h-screen items-center text-red-600">
+      HomePage
+    </section>
+  );
 }

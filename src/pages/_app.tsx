@@ -9,7 +9,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';
 
 import { MainLayout } from '#/layouts/MainLayout';
-import { jetbrainsMono, plusJakartaSans } from '#/utils/font.utils';
+import { jetbrainsMono, plusJakartaSans } from '#/shared/utils/font.utils';
 
 import '../styles/globals.css';
 
