@@ -1,6 +1,7 @@
 {
-  "plugins": ["simple-import-sort", "tailwindcss"],
-  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "simple-import-sort", "tailwindcss"],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "plugin:tailwindcss/recommended"],
   "rules": {
     "quotes": ["error", "single"],
     "simple-import-sort/imports": [
@@ -26,6 +27,7 @@
           }
         ]
       }
-    ]
+    ],
+    "@typescript-eslint/consistent-type-imports": "error"
   }
 }
