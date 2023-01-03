@@ -1,0 +1,31 @@
+{
+  "plugins": ["simple-import-sort", "tailwindcss"],
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^react", "^@?\\w"],
+          ["^(#|components)(/.*|$)"],
+          ["^\\u0000"],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          ["^.+\\.?(css)$"]
+        ]
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["../../*"],
+            "message": "Please use alias import instead of deep parent import"
+          }
+        ]
+      }
+    ]
+  }
+}
