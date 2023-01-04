@@ -69,7 +69,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
       />
       <button
         className={clsx(
-          'flex h-9 w-9 select-none items-center justify-center rounded-xl bg-slate-300/50 text-slate-800 outline-none',
+          'flex h-9 w-9 items-center justify-center rounded-xl bg-slate-300/50 text-slate-800 outline-none',
           'hover:bg-slate-300/70 sm:ml-0',
           'dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50'
         )}

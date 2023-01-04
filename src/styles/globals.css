@@ -12,6 +12,11 @@ section {
   @apply max-w-7xl mx-auto;
 }
 
+/* Disable highlight when click */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
