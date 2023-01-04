@@ -8,7 +8,7 @@ const nextConfig = {
       use: [
         {
           loader: '@svgr/webpack',
-          options: { icon: true, jsxRuntime: 'automatic', typescript: true },
+          options: { icon: true, typescript: true },
         },
       ],
     });
