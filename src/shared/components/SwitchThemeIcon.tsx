@@ -22,7 +22,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
 
   const onWindowResize = () => {
     scale.current =
-      2 *
+      (2 / 36) * // 36 is size of toggle button
       Math.sqrt(
         Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
       );
@@ -44,7 +44,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
       scale: [0, scale.current],
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
       },
     });
 
@@ -64,7 +64,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <div className="relative">
       <m.div
-        className="absolute top-1/2 left-1/2 h-px w-px origin-center -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full"
+        className="absolute h-full w-full scale-0 rounded-full"
         animate={animate}
       />
       <button
