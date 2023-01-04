@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { ArrowLeftIcon } from '#/assets/icons';
+import { ChevronLeftIcon } from '#/assets/icons';
 
 export const Logo = () => {
   const { pathname } = useRouter();
@@ -10,10 +10,10 @@ export const Logo = () => {
   return (
     <div>
       <Link className="flex items-center gap-2" href="/">
-        <ArrowLeftIcon
+        <ChevronLeftIcon
           className={clsx(
-            'rounded-lg border-[3px] border-accent-600 text-2xl text-accent-600',
-            pathname === '/' && 'bg-accent-600 text-white'
+            'rounded-lg border-[3px] border-accent-600 text-2xl',
+            pathname === '/' ? 'bg-accent-600 text-white' : 'text-accent-600'
           )}
         />
         <div className="text-xl font-extrabold">

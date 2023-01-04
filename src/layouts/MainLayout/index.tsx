@@ -11,7 +11,7 @@ type MainLayoutProps = PropsWithChildren & {
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
-      <header className="fixed h-16 w-full">
+      <header className="fixed z-50 h-16 w-full">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-3">
           <div className="flex items-center gap-4">
             <Logo />

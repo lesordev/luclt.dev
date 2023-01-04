@@ -36,7 +36,9 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
   }, []);
 
   const handleSwitchTheme = async () => {
-    animate.set({ backgroundColor: isDark ? '#e2e8f0' : '#0f172a' });
+    animate.set({
+      backgroundColor: isDark ? '#e2e8f0' : '#0f172a',
+    });
 
     // stage 1 - scale, opaque the transition.
     await animate.start({
@@ -58,7 +60,11 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
     });
 
     // stage 3 - reset scale and opacity to default property
-    animate.set({ scale: 0, opacity: 1, borderRadius: 9999 });
+    animate.set({
+      scale: 0,
+      opacity: 1,
+      borderRadius: 9999,
+    });
   };
 
   return (
@@ -69,7 +75,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
       />
       <button
         className={clsx(
-          'flex h-9 w-9 items-center justify-center rounded-xl bg-slate-300/50 text-slate-800 outline-none',
+          'flex h-9 w-9 items-center justify-center rounded-xl bg-slate-300/50 text-slate-700 outline-none',
           'hover:bg-slate-300/70 sm:ml-0',
           'dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50'
         )}
