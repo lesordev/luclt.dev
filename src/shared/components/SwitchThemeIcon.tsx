@@ -20,12 +20,19 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
 
   const isDark = resolvedTheme === 'dark';
 
-  useEffect(() => {
+  const onWindowResize = () => {
     scale.current =
       2 *
       Math.sqrt(
         Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
       );
+  };
+
+  useEffect(() => {
+    onWindowResize();
+    window.addEventListener('resize', onWindowResize);
+
+    return () => window.removeEventListener('resize', onWindowResize);
   }, []);
 
   const handleSwitchTheme = async () => {
