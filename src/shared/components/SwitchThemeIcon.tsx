@@ -44,7 +44,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
       scale: [0, scale.current],
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.5,
       },
     });
 
@@ -53,7 +53,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
     await animate.start({
       opacity: [1, 0],
       transition: {
-        duration: 1,
+        duration: 0.34,
       },
     });
 
@@ -64,7 +64,7 @@ export const SwitchThemeIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <div className="relative">
       <m.div
-        className="absolute h-px w-px origin-center scale-0 rounded-full"
+        className="absolute top-1/2 left-1/2 h-px w-px origin-center -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full"
         animate={animate}
       />
       <button

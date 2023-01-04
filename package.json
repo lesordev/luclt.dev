@@ -10,6 +10,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "@next/font": "13.1.1",
     "clsx": "^1.2.1",
     "framer-motion": "^8.1.4",

@@ -10,6 +10,9 @@ module.exports = {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         mono: ['var(--font-mono)', ...fontFamily.mono],
       },
+      fontSize: {
+        '2xs': '0.625rem',
+      },
       colors: {
         accent: {
           50: '#f5f3ff',

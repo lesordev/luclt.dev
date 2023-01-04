@@ -9,7 +9,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';
 
 import { MainLayout } from '#/layouts/MainLayout';
-import { jetbrainsMono, plusJakartaSans } from '#/shared/utils/font.utils';
+import { fontMono, fontSans } from '#/shared/utils/font.utils';
 
 import '../styles/globals.css';
 
@@ -27,8 +27,8 @@ export default function App({ Component, pageProps }: CustomAppProps) {
           <LazyMotion strict features={domAnimation}>
             <div
               className={clsx([
-                jetbrainsMono.variable,
-                plusJakartaSans.variable,
+                fontMono.variable,
+                fontSans.variable,
                 'font-sans',
               ])}
             >

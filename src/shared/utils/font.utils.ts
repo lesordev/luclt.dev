@@ -1,16 +1,15 @@
-import {
-  JetBrains_Mono as JetBrainsMono,
-  Plus_Jakarta_Sans as PlusJakartaSans,
-} from '@next/font/google';
+import { JetBrains_Mono as JetBrainsMono, Montserrat } from '@next/font/google';
 
-export const jetbrainsMono = JetBrainsMono({
+export const fontMono = JetBrainsMono({
   preload: true,
   subsets: ['latin'],
   variable: '--font-mono',
+  display: 'block',
 });
 
-export const plusJakartaSans = PlusJakartaSans({
+export const fontSans = Montserrat({
   preload: true,
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'block',
 });

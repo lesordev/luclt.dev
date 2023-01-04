@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  @apply max-w-7xl mx-auto border border-red-400;
+  @apply max-w-7xl mx-auto;
 }
 
 /* Custom scrollbar */
